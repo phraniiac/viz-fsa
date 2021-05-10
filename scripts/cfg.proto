@@ -1,0 +1,33 @@
+// Taken from - https://repo.bloomreach.com/projects/BR/repos/work/browse/src/common/proto/analytics.proto
+
+message ContextFreeGrammar {
+    message TokenNode {
+      required string name = 1;
+      optional int32 canonical_id = 2;
+      repeated string possible_values = 3;
+      optional string chosen_value = 4;
+      optional bool is_terminal_node = 5;
+      optional bool can_repeat = 6 [default = true];
+      optional bool solr_query_node = 7 [default = false];
+      optional bool entity_node = 8 [default = false];
+      optional bool metric_node = 9 [default = false];
+      optional bool filter_node = 10 [default = false];
+      optional bool group_by_node = 11 [default = false];
+      optional bool single_entity_node = 12 [default = false];
+      optional bool is_visit_segment_node = 13 [default = false];
+    }
+    message ProductionRule {
+      required int32 node1 = 1;
+      repeated int32 adjacent_nodes = 2;
+    }
+    message ValueRule {
+      required int32 node1 = 1;
+      required int32 node2 = 2;
+      required int32 op_node = 3;
+    }
+    repeated TokenNode nodes = 1;
+    repeated ProductionRule production_rules = 2;
+    repeated ValueRule value_rules = 3;
+    repeated TokenNode disabled_nodes = 4;
+    repeated TokenNode whitelisted_nodes = 5;
+  }

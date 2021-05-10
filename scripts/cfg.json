@@ -1,0 +1,833 @@
+nodes {
+  name: "ROOT"
+  canonical_id: -1
+  is_terminal_node: false
+}
+nodes {
+  name: "Performance"
+  canonical_id: 0
+  is_terminal_node: false
+}
+nodes {
+  name: "Top"
+  canonical_id: 1
+  is_terminal_node: false
+}
+nodes {
+  name: "Bottom"
+  canonical_id: 2
+  is_terminal_node: false
+}
+nodes {
+  name: "Products"
+  canonical_id: 3
+  is_terminal_node: true
+  entity_node: true
+}
+nodes {
+  name: "Brands"
+  canonical_id: 4
+  is_terminal_node: true
+  entity_node: true
+}
+nodes {
+  name: "Categories"
+  canonical_id: 5
+  is_terminal_node: true
+  entity_node: true
+}
+nodes {
+  name: "10"
+  canonical_id: 6
+  is_terminal_node: false
+}
+nodes {
+  name: "100"
+  canonical_id: 7
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 8
+  possible_values: "\"query\""
+  is_terminal_node: false
+  solr_query_node: true
+}
+nodes {
+  name: "by"
+  canonical_id: 9
+  is_terminal_node: false
+}
+nodes {
+  name: "of"
+  canonical_id: 10
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 14
+  possible_values: "\"product:product ID\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 15
+  possible_values: "\"Brand Name\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 16
+  possible_values: "\"cat:category ID\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 17
+  possible_values: "atc"
+  possible_values: "conversions"
+  possible_values: "visits"
+  possible_values: "atc/visits"
+  possible_values: "revenue"
+  possible_values: "RPV"
+  possible_values: "conversions/visits"
+  possible_values: "entrances"
+  is_terminal_node: true
+  metric_node: true
+}
+nodes {
+  name: "where"
+  canonical_id: 18
+  is_terminal_node: false
+}
+nodes {
+  name: "channel"
+  canonical_id: 19
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: "is"
+  canonical_id: 20
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 21
+  possible_values: "\"organic search\""
+  possible_values: "\"paid search\""
+  possible_values: "\"social\""
+  possible_values: "\"direct\""
+  possible_values: "\"email\""
+  possible_values: "\"comparison shopping\""
+  possible_values: "\"display\""
+  possible_values: "\"affiliate\""
+  is_terminal_node: true
+}
+nodes {
+  name: "device"
+  canonical_id: 22
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: "is"
+  canonical_id: 23
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 24
+  possible_values: "\"Desktop\""
+  possible_values: "\"Mobile\""
+  possible_values: "\"Tablet\""
+  is_terminal_node: true
+}
+nodes {
+  name: "and"
+  canonical_id: 25
+  is_terminal_node: false
+}
+nodes {
+  name: "referrer"
+  canonical_id: 26
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: "is"
+  canonical_id: 27
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 28
+  possible_values: "\"google.com\""
+  possible_values: "\"bing.com\""
+  possible_values: "\"yahoo.com\""
+  possible_values: "\"facebook.com\""
+  possible_values: "\"twitter.com\""
+  possible_values: "\"pinterest.com\""
+  is_terminal_node: true
+}
+nodes {
+  name: "state"
+  canonical_id: 29
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: "is"
+  canonical_id: 30
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 31
+  possible_values: "\"Alabama\""
+  possible_values: "\"Alaska\""
+  possible_values: "\"Arizona\""
+  possible_values: "\"Arkansas\""
+  possible_values: "\"California\""
+  possible_values: "\"Colorado\""
+  possible_values: "\"Connecticut\""
+  possible_values: "\"Delaware\""
+  possible_values: "\"Florida\""
+  possible_values: "\"Georgia\""
+  possible_values: "\"Hawaii\""
+  possible_values: "\"Idaho\""
+  possible_values: "\"Illinois\""
+  possible_values: "\"Indiana\""
+  possible_values: "\"Iowa\""
+  possible_values: "\"Kansas\""
+  possible_values: "\"Kentucky\""
+  possible_values: "\"Louisiana\""
+  possible_values: "\"Maine\""
+  possible_values: "\"Maryland\""
+  possible_values: "\"Massachusetts\""
+  possible_values: "\"Michigan\""
+  possible_values: "\"Minnesota\""
+  possible_values: "\"Mississippi\""
+  possible_values: "\"Missouri\""
+  possible_values: "\"Montana\""
+  possible_values: "\"Nebraska\""
+  possible_values: "\"Nevada\""
+  possible_values: "\"New Hampshire\""
+  possible_values: "\"New Jersey\""
+  possible_values: "\"New Mexico\""
+  possible_values: "\"New York\""
+  possible_values: "\"North Carolina\""
+  possible_values: "\"North Dakota\""
+  possible_values: "\"Ohio\""
+  possible_values: "\"Oklahoma\""
+  possible_values: "\"Oregon\""
+  possible_values: "\"Pennsylvania\""
+  possible_values: "\"Rhode Island\""
+  possible_values: "\"South Carolina\""
+  possible_values: "\"South Dakota\""
+  possible_values: "\"Tennessee\""
+  possible_values: "\"Texas\""
+  possible_values: "\"Utah\""
+  possible_values: "\"Vermont\""
+  possible_values: "\"Virginia\""
+  possible_values: "\"Washington\""
+  possible_values: "\"West Virginia\""
+  possible_values: "\"Wisconsin\""
+  possible_values: "\"Wyoming\""
+  is_terminal_node: true
+}
+
+nodes {
+  name: "is"
+  canonical_id: 62
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 63
+  possible_values: "\"page:Page_URL\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "new_user"
+  canonical_id: 82
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: "is"
+  canonical_id: 83
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 84
+  possible_values: "\"true\""
+  possible_values: "\"false\""
+  is_terminal_node: true
+}
+nodes {
+  name: "page"
+  canonical_id: 88
+  is_terminal_node: false
+  can_repeat: false
+  filter_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 89
+  possible_values: "is"
+  possible_values: "like"
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 90
+  possible_values: "\"page URL\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "segmented"
+  canonical_id: 32
+  is_terminal_node: false
+}
+nodes {
+  name: "by"
+  canonical_id: 33
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 34
+  possible_values: "channel"
+  possible_values: "device"
+  possible_values: "state"
+  possible_values: "new_user"
+
+  can_repeat: false
+  is_terminal_node: true
+  group_by_node: true
+}
+nodes {
+  name: "1000"
+  canonical_id: 36
+  is_terminal_node: false
+}
+nodes {
+  name: "All"
+  canonical_id: 37
+  is_terminal_node: false
+}
+nodes {
+  name: "Products"
+  canonical_id: 38
+  entity_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "Brands"
+  canonical_id: 39
+  entity_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "Categories"
+  canonical_id: 40
+  entity_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "Queries"
+  canonical_id: 41
+  entity_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "coviewed"
+  canonical_id: 42
+  is_terminal_node : false
+}
+nodes {
+  name: "with"
+  canonical_id: 43
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 44
+  possible_values: "\"product:product ID\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 45
+  possible_values: "\"Brand Name\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 46
+  possible_values: "\"cat:category ID\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 47
+  possible_values: "\"query\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "Queries"
+  canonical_id: 49
+  entity_node: true
+  is_terminal_node: true
+}
+
+nodes {
+  name: "Channels"
+  canonical_id: 85
+  entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "Devices"
+  canonical_id: 86
+  entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "States"
+  canonical_id: 87
+  entity_node: true
+  is_terminal_node: true
+}
+
+nodes {
+  name: "Pages"
+  canonical_id: 52
+  entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: ""
+  canonical_id: 53
+  possible_values: "\"page:Page_URL\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "Improve page layout where"
+  canonical_id: 68
+  is_terminal_node: false
+}
+nodes {
+  name: "url"
+  canonical_id: 69
+  filter_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "is"
+  canonical_id: 70
+  is_terminal_node: false
+}
+nodes {
+  name: ""
+  canonical_id: 71
+  possible_values: "\"page:http://www.url1.com/\""
+  single_entity_node: true
+  is_terminal_node: true
+}
+nodes {
+  name: "Pages"
+  canonical_id: 72
+  entity_node: true
+  is_terminal_node: false
+}
+nodes {
+  name: "cobought"
+  canonical_id: 81
+  is_terminal_node : false
+}
+
+production_rules {
+  node1: 72
+  adjacent_nodes: 42
+}
+production_rules {
+  node1: 68
+  adjacent_nodes: 69
+}
+production_rules {
+  node1: 69
+  adjacent_nodes: 70
+}
+production_rules {
+  node1: 70
+  adjacent_nodes: 71
+}
+production_rules {
+  node1: 32
+  adjacent_nodes: 33
+}
+production_rules {
+  node1: 33
+  adjacent_nodes: 34
+}
+production_rules {
+  node1: -1
+  adjacent_nodes: 0
+  adjacent_nodes: 1
+  adjacent_nodes: 2
+  adjacent_nodes: 37
+  adjacent_nodes: 38
+  adjacent_nodes: 39
+  adjacent_nodes: 40
+  adjacent_nodes: 41
+  adjacent_nodes: 72
+}
+production_rules {
+  node1: 0
+  adjacent_nodes: 10
+}
+production_rules {
+  node1: 1
+  adjacent_nodes: 3
+  adjacent_nodes: 49
+  adjacent_nodes: 52
+  adjacent_nodes: 4
+  adjacent_nodes: 6
+  adjacent_nodes: 7
+  adjacent_nodes: 36
+  adjacent_nodes: 8
+  adjacent_nodes: 5
+  adjacent_nodes: 85
+  adjacent_nodes: 86
+  adjacent_nodes: 87
+}
+production_rules {
+  node1: 2
+  adjacent_nodes: 3
+  adjacent_nodes: 52
+  adjacent_nodes: 49
+  adjacent_nodes: 4
+  adjacent_nodes: 6
+  adjacent_nodes: 7
+  adjacent_nodes: 36
+  adjacent_nodes: 8
+  adjacent_nodes: 5
+  adjacent_nodes: 85
+  adjacent_nodes: 86
+  adjacent_nodes: 87
+}
+production_rules {
+  node1: 37
+  adjacent_nodes: 8
+}
+production_rules {
+  node1: 6
+  adjacent_nodes: 3
+  adjacent_nodes: 49
+  adjacent_nodes: 52
+  adjacent_nodes: 4
+  adjacent_nodes: 5
+  adjacent_nodes: 8
+  adjacent_nodes: 85
+  adjacent_nodes: 86
+  adjacent_nodes: 87
+}
+production_rules {
+  node1: 7
+  adjacent_nodes: 3
+  adjacent_nodes: 49
+  adjacent_nodes: 52
+  adjacent_nodes: 4
+  adjacent_nodes: 5
+  adjacent_nodes: 8
+  adjacent_nodes: 85
+  adjacent_nodes: 86
+  adjacent_nodes: 87
+}
+production_rules {
+  node1: 36
+  adjacent_nodes: 3
+  adjacent_nodes: 49
+  adjacent_nodes: 52
+  adjacent_nodes: 4
+  adjacent_nodes: 5
+  adjacent_nodes: 8
+  adjacent_nodes: 85
+  adjacent_nodes: 86
+  adjacent_nodes: 87
+}
+production_rules {
+  node1: 3
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 85
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 86
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 87
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 52
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 49
+  adjacent_nodes: 18
+  adjacent_nodes: 9
+}
+production_rules {
+  node1: 4
+  adjacent_nodes: 9
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 5
+  adjacent_nodes: 9
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 8
+  adjacent_nodes: 3
+  adjacent_nodes: 49
+  adjacent_nodes: 4
+}
+production_rules {
+  node1: 9
+  adjacent_nodes: 17
+}
+production_rules {
+  node1: 10
+  adjacent_nodes: 14
+  adjacent_nodes: 53
+  adjacent_nodes: 15
+  adjacent_nodes: 16
+}
+production_rules {
+  node1: 14
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 53
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 15
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 16
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+production_rules {
+  node1: 17
+  adjacent_nodes: 18
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 18
+  adjacent_nodes: 19
+  adjacent_nodes: 22
+  adjacent_nodes: 29
+  adjacent_nodes: 26
+  adjacent_nodes: 82
+}
+
+production_rules {
+  node1: 19
+  adjacent_nodes: 20
+}
+production_rules {
+  node1: 20
+  adjacent_nodes: 21
+}
+production_rules {
+  node1: 21
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 22
+  adjacent_nodes: 23
+}
+production_rules {
+  node1: 23
+  adjacent_nodes: 24
+}
+production_rules {
+  node1: 24
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 26
+  adjacent_nodes: 27
+}
+production_rules {
+  node1: 27
+  adjacent_nodes: 28
+}
+production_rules {
+  node1: 28
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 29
+  adjacent_nodes: 30
+}
+production_rules {
+  node1: 30
+  adjacent_nodes: 31
+}
+production_rules {
+  node1: 31
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 62
+  adjacent_nodes: 63
+}
+production_rules {
+  node1: 63
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 82
+  adjacent_nodes: 83
+}
+production_rules {
+  node1: 83
+  adjacent_nodes: 84
+}
+production_rules {
+  node1: 84
+  adjacent_nodes: 25
+  adjacent_nodes: 32
+}
+
+production_rules {
+  node1: 25
+  adjacent_nodes: 19
+  adjacent_nodes: 22
+  adjacent_nodes: 29
+  adjacent_nodes: 26
+}
+
+production_rules {
+  node1: 38
+  adjacent_nodes: 42
+  adjacent_nodes: 81
+}
+production_rules {
+  node1: 39
+  adjacent_nodes: 42
+  adjacent_nodes: 81
+}
+production_rules {
+  node1: 40
+  adjacent_nodes: 42
+  adjacent_nodes: 81
+}
+production_rules {
+  node1: 41
+  adjacent_nodes: 42
+  adjacent_nodes: 81
+}
+production_rules {
+  node1: 42
+  adjacent_nodes: 43
+}
+production_rules {
+  node1: 81
+  adjacent_nodes: 43
+}
+
+production_rules {
+  node1: 43
+  adjacent_nodes: 44
+  adjacent_nodes: 45
+  adjacent_nodes: 46
+  adjacent_nodes: 47
+}
+value_rules {
+  node1: 19
+  op_node: 20
+  node2: 21
+}
+value_rules {
+  node1: 22
+  op_node: 23
+  node2: 24
+}
+value_rules {
+  node1: 29
+  op_node: 30
+  node2: 31
+}
+value_rules {
+  node1: 26
+  op_node: 27
+  node2: 28
+}
+value_rules {
+  node1: 69
+  op_node: 70
+  node2: 71
+}
+value_rules {
+  node1: 82
+  op_node: 83
+  node2: 84
+}
